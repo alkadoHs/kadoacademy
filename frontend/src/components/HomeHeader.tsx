@@ -3,25 +3,23 @@ import CodeHighlighter from "./CodeHighliter";
 const HomeHeader = () => {
   const query = "const successfullyCoder = { ... }";
   return (
-    <article className="grid grid-cols-2 gap-10 mt-5">
+    <article className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-5">
       <section>
-        <h1 className="text-5xl text-slate-950 font-bold">
+        <h1 className="text-6xl text-slate-300 font-bold">
           Jifunze{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-l from-indigo-600 to-purple-600">
+          <span className="bg-clip-text text-transparent bg-gradient-to-l from-indigo-400 to-purple-400">
             programming
           </span>{" "}
           kwa tani yako
         </h1>
-        <p className="py-4 text-slate-500 text-lg">
+        <p className="py-4 text-slate-400 text-xl">
           Course zote hapa ndani ya kadoacademy zimeandaliwa kwa lugha ya
           kiswahili ikiwa na maana ya kuwalenga watanzania wenye uhitaji wa
-          kuzijua hizi teknolojia.
+          kuzijua hizi teknolojia. <br />
+          Kama hujawahi kuandika codes kabisaa!
         </p>
-        <p className="py-2 text-slate-500 text-lg">
-          Kama hujui ni wapi pakuanzia ondoa shaka, nimekuandalia maelekezo
-          mazuri yatakayo kutambulisha kwenye ulimwengu wa programming.
-        </p>
-        <p className="text-slate-700 animate-bounce">
+
+        <p className="text-slate-500 animate-bounce">
           Bofya kitufe kupata maelekezo. ⬇
         </p>
         <br />

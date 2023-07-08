@@ -5,12 +5,11 @@ import Footer from "./Footer";
 const Layout = () => {
   return (
     <>
-      <header>
+      <header className="border-b border-slate-600">
         <Navbar />
-        <hr className="divide-slate-400" />
       </header>
 
-      <main className="px-20">
+      <main className="px-5 md:px-10 lg:px-20">
         <Outlet />
       </main>
 

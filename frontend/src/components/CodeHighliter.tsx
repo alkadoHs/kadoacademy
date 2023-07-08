@@ -1,16 +1,13 @@
 import React, { useEffect, useRef, ReactNode } from "react";
 import hljs from "highlight.js";
-import "highlight.js/styles/atom-one-light.css"; // Replace with the desired highlight.js style
+import "highlight.js/styles/atom-one-dark-reasonable.css"; // Replace with the desired highlight.js style
 
 interface CodeHighlighterProps {
   query: string;
   children: ReactNode;
 }
 
-const CodeHighlighter: React.FC<CodeHighlighterProps> = ({
-  query,
-  children,
-}) => {
+const CodeHighlighter: React.FC<CodeHighlighterProps> = ({ children }) => {
   const codeRef = useRef(null);
 
   useEffect(() => {
@@ -19,7 +16,9 @@ const CodeHighlighter: React.FC<CodeHighlighterProps> = ({
 
   return (
     <pre>
-      <code ref={codeRef}>{children}</code>
+      <code ref={codeRef} className="rounded-lg">
+        {children}
+      </code>
     </pre>
   );
 };

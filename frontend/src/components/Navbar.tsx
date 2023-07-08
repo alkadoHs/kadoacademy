@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-end items-center gap-2 px-5 text-slate-700 py-2 font-semibold transition-all">
+    <nav className="flex justify-end items-center gap-2 px-5 text-slate-300 py-2 font-semibold transition-all">
       <NavLink to="/" className="mr-auto text-xl">
         Home
       </NavLink>
@@ -34,7 +34,7 @@ const Navbar = () => {
         <NavLink
           to="/signup"
           className="py-2
-          px-5 bg-gradient-to-r from-indigo-500 to-purple-500  rounded-3xl text-slate-100 font-semibold"
+          px-5 bg-indigo-500  rounded-3xl text-slate-100 font-semibold"
         >
           Sign Up
         </NavLink>
